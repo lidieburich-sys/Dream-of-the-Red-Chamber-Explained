@@ -61,6 +61,14 @@ figure.tu figcaption{font-size:.88em;color:var(--muted);margin-top:10px;text-ali
 .howto ol{padding-left:1.4em}
 .one{font-family:"Noto Serif SC","Songti SC",serif;font-size:1.15em;text-align:center;padding:22px 18px;border:2px solid var(--red);border-radius:10px;background:var(--red-soft);margin:20px 0}
 .next{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+a.bigcard{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border:2px solid var(--red);border-radius:14px;padding:26px 28px;margin:26px 0 10px;text-align:center}
+a.bigcard:hover{background:var(--red-soft)}
+a.bigcard .k{font-size:.8em;color:var(--muted);letter-spacing:.2em}
+a.bigcard .h{font-family:"Noto Serif SC","Songti SC",serif;font-size:1.5em;font-weight:700;color:var(--red);margin:6px 0 2px}
+a.bigcard .gua{font-size:3em;line-height:1.2;color:var(--ink)}
+a.bigcard .d{text-align:left;max-width:640px;margin:10px auto;font-size:.95em}
+a.bigcard .parts{font-size:.82em;color:var(--muted)}
+a.bigcard .go{display:inline-block;margin-top:14px;background:var(--red);color:var(--paper);border-radius:8px;padding:8px 22px;font-weight:700}
 .lessons{list-style:none;padding:0;margin:0}
 .lessons li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 12px}
 .lessons li a{font-weight:700;text-decoration:none}
