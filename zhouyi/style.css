@@ -1,0 +1,87 @@
+/* 周易课程 · 与红楼梦逐句精读同一套配色 */
+:root{
+  --bg:#f6f1e7; --paper:#fffdf8; --ink:#2b2622; --muted:#7a6f64; --line:#e6dccb;
+  --red:#9e2a2b; --red-soft:#f3e3df; --note:#f7efe0; --note-line:#d9b779;
+  --blue:#2f5d7c; --blue-soft:#e3ecf2;
+  --fs:18px;
+}
+body.dark{
+  --bg:#1b1917; --paper:#24211e; --ink:#e8e1d6; --muted:#a39888; --line:#3a352f;
+  --red:#e07a6a; --red-soft:#3a2724; --note:#2e2922; --note-line:#8c7243;
+  --blue:#8cb8d6; --blue-soft:#22303a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;font-size:var(--fs);line-height:1.8;transition:background .2s,color .2s}
+header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar{max-width:1000px;margin:0 auto;padding:10px 40px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-family:"Noto Serif SC","Songti SC",serif;font-weight:700;color:var(--red);letter-spacing:.1em;font-size:20px;margin-right:auto;text-decoration:none}
+.bar a.nav,button{font:inherit;font-size:14px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer;text-decoration:none}
+main{max-width:1000px;margin:0 auto;padding:24px 40px 80px}
+.hero{text-align:center;padding:30px 0 10px}
+.hero h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:1.6em;margin:0 0 6px;color:var(--red);letter-spacing:.08em}
+.hero .sub{color:var(--muted);font-size:.85em}
+nav.toc{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:24px 0;font-size:.85em}
+nav.toc b{display:block;margin-bottom:6px;color:var(--muted);font-weight:600}
+nav.toc a{display:inline-block;margin:2px 14px 2px 0;color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--muted)}
+nav.toc a:hover{color:var(--red)}
+section.sec{margin:48px 0}
+section.sec>h2{font-size:1.2em;color:var(--red);border-left:4px solid var(--red);padding-left:12px;margin:0 0 18px;scroll-margin-top:70px}
+h3{font-size:1.02em;color:var(--red);margin:28px 0 10px}
+h4{font-size:.95em;margin:20px 0 6px}
+p{margin:0 0 14px}
+a{color:var(--red)}
+.yw{font-family:"Noto Serif SC","Songti SC",serif;font-weight:600;font-size:1.05em}
+blockquote.yuan{margin:10px 0 18px;padding:14px 20px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:8px;font-family:"Noto Serif SC","Songti SC",serif;font-size:1.05em}
+blockquote.yuan p{margin:0 0 6px}
+blockquote.yuan .src{display:block;font-family:inherit;font-size:.78em;color:var(--muted);margin-top:8px}
+.pair{margin:0 0 20px;padding-bottom:14px;border-bottom:1px dashed var(--line)}
+.pair .bh{margin-top:4px}
+.gloss{font-size:.86em;color:var(--muted);margin-top:4px}
+.gloss b{color:var(--ink);font-weight:600}
+.note{background:var(--note);border-left:3px solid var(--note-line);border-radius:6px;padding:12px 18px;margin:12px 0 18px;font-size:.92em}
+.note h4{margin:0 0 6px;color:var(--red)}
+.note ul{margin:0;padding-left:1.2em}
+.dispute{background:var(--blue-soft);border-left:3px solid var(--blue);border-radius:6px;padding:12px 18px;margin:12px 0 18px;font-size:.92em}
+.dispute h4{margin:0 0 6px;color:var(--blue)}
+.dispute .tag{display:inline-block;font-size:.8em;color:var(--blue);border:1px solid var(--blue);border-radius:4px;padding:0 6px;margin-right:6px}
+.cmt{margin:14px 0 18px}
+.cmt .who{font-weight:700;color:var(--red)}
+.cmt .who small{font-weight:400;color:var(--muted);margin-left:6px}
+.cmt .q{font-family:"Noto Serif SC","Songti SC",serif;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:10px 14px;margin:6px 0}
+.cmt .t{font-size:.95em}
+.tblwrap{overflow-x:auto;margin:10px 0 18px}
+table{border-collapse:collapse;width:100%;font-size:.86em;background:var(--paper)}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:var(--red-soft);color:var(--ink)}
+figure.tu{margin:18px 0 24px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px}
+figure.tu svg{display:block;width:100%;height:auto;max-width:760px;margin:0 auto}
+figure.tu figcaption{font-size:.88em;color:var(--muted);margin-top:10px;text-align:center}
+.howto{font-size:.95em}
+.howto ol{padding-left:1.4em}
+.one{font-family:"Noto Serif SC","Songti SC",serif;font-size:1.15em;text-align:center;padding:22px 18px;border:2px solid var(--red);border-radius:10px;background:var(--red-soft);margin:20px 0}
+.next{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+.lessons{list-style:none;padding:0;margin:0}
+.lessons li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 12px}
+.lessons li a{font-weight:700;text-decoration:none}
+.lessons li .d{font-size:.88em;color:var(--muted);margin-top:4px}
+.lessons li.soon{opacity:.7}
+.prompt{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 20px;font-size:.95em}
+.prompt ol{padding-left:1.4em;margin:6px 0 10px}
+.small{font-size:.85em;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.75em;padding:20px}
+#totop{position:fixed;right:18px;bottom:18px;border-radius:50%;width:42px;height:42px;padding:0;font-size:18px;display:none}
+/* SVG 配色跟随日夜模式 */
+svg .yang,svg .yin{fill:var(--ink)}
+svg .yang.hi{fill:var(--red)}
+svg .t{fill:var(--ink);font-size:15px;font-family:inherit}
+svg .ts{fill:var(--muted);font-size:13px;font-family:inherit}
+svg .ta{fill:var(--red);font-size:15px;font-weight:700;font-family:inherit}
+svg .tb{fill:var(--blue);font-size:13px;font-family:inherit}
+svg .ln{stroke:var(--muted);fill:none;stroke-width:1.2}
+svg .lnb{stroke:var(--blue);fill:none;stroke-width:1.4;stroke-dasharray:5 4}
+svg .lna{stroke:var(--red);fill:none;stroke-width:1.6}
+svg .box{fill:var(--bg);stroke:var(--line)}
+svg .boxa{fill:var(--red-soft);stroke:var(--red)}
+@media (min-width:1000px){ :root{--fs:20px} }
+@media (max-width:560px){ :root{--fs:17px} .bar,main{padding-left:16px;padding-right:16px} .brand{font-size:18px} figure.tu{padding:8px} }
