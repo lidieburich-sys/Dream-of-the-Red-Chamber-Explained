@@ -9,7 +9,7 @@
   // 顶部阅读进度条
   const hdr=document.querySelector("header.top");
   if(hdr && document.querySelector(".pager")){
-    const p=document.createElement("div"); p.id="prog"; hdr.appendChild(p);
+    const p=document.createElement("div"); p.id="readbar"; hdr.appendChild(p);
     const up=()=>{ const h=document.documentElement; const m=h.scrollHeight-h.clientHeight; p.style.width=(m>0?Math.min(100,h.scrollTop/m*100):0)+"%"; };
     window.addEventListener("scroll",up,{passive:true}); up();
   }

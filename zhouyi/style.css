@@ -104,7 +104,7 @@ nav.pager a.prev small::before{content:"← "}
 nav.pager a.next{text-align:right;grid-column:2}
 nav.pager a.next small::after{content:" →"}
 /* 阅读进度 */
-#prog{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--red);transition:width .1s linear}
+#readbar{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--red);transition:width .1s linear}
 footer{border-top:1px solid var(--line);max-width:1000px;margin:0 auto}
 @media print{header.top,#totop,nav.pager,nav.toc{display:none} body{background:#fff}}
 /* SVG 配色跟随日夜模式 */
