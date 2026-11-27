@@ -6,6 +6,13 @@
   const apply=d=>{ document.body.classList.toggle("dark",d); if(b) b.textContent=d?"☀":"☾"; };
   apply(get("hlm-dark",false));
   if(b) b.onclick=()=>{ const d=!document.body.classList.contains("dark"); apply(d); set("hlm-dark",d); };
+  // 顶部阅读进度条
+  const hdr=document.querySelector("header.top");
+  if(hdr && document.querySelector(".pager")){
+    const p=document.createElement("div"); p.id="prog"; hdr.appendChild(p);
+    const up=()=>{ const h=document.documentElement; const m=h.scrollHeight-h.clientHeight; p.style.width=(m>0?Math.min(100,h.scrollTop/m*100):0)+"%"; };
+    window.addEventListener("scroll",up,{passive:true}); up();
+  }
   const t=document.getElementById("totop");
   if(t){ window.addEventListener("scroll",()=>{ t.style.display=window.scrollY>600?"block":"none"; }); t.onclick=()=>window.scrollTo(0,0); }
 })();
