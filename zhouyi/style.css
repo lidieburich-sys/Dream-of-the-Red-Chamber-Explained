@@ -121,3 +121,21 @@ svg .box{fill:var(--bg);stroke:var(--line)}
 svg .boxa{fill:var(--red-soft);stroke:var(--red)}
 @media (min-width:1000px){ :root{--fs:20px} }
 @media (max-width:560px){ :root{--fs:17px} .bar,main{padding-left:16px;padding-right:16px} .bar{gap:8px;padding-top:8px;padding-bottom:8px} .bar a.nav,button{padding:4px 8px;font-size:13px} .brand{font-size:17px} figure.tu{padding:8px} .hero{padding-top:22px} .hero h1{font-size:1.45em;letter-spacing:.06em} blockquote.yuan{padding:12px 14px} .note,.dispute{padding:10px 14px} nav.pager{grid-template-columns:1fr;gap:10px} nav.pager a.next{grid-column:1} a.bigcard{padding:20px 16px} .lessons li.les{padding-left:58px} .lessons li.les svg.mini{left:14px;width:28px} th,td{padding:6px 7px} }
+/* 原文与白话逐句对照 */
+.dz{margin:12px 0 22px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:10px;box-shadow:var(--shadow);padding:6px 22px 12px}
+.dz .gm{margin:10px 0 2px;font-size:.92em;color:var(--muted);font-family:var(--sans)}
+.dz .gm b{font-family:var(--serif);font-size:1.15em;color:var(--red);margin-right:2px}
+.ju{padding:12px 0;border-bottom:1px dashed var(--line)}
+.ju:last-of-type{border-bottom:0}
+.ju p{margin:0}
+.ju .yw{font-family:var(--serif);font-weight:600;font-size:1.07em;line-height:1.9;letter-spacing:.04em}
+.ju .bh{margin-top:4px;font-family:var(--sans);font-size:.95em;line-height:1.8;color:var(--ink);padding-left:12px;border-left:2px solid var(--red-soft);text-align:justify;text-justify:inter-ideograph}
+details.zs{margin-top:6px;padding-left:12px}
+details.zs summary{cursor:pointer;font-family:var(--sans);font-size:.78em;color:var(--blue);list-style:none;display:inline-block;user-select:none}
+details.zs summary::-webkit-details-marker{display:none}
+details.zs summary::before{content:"▸ ";}
+details.zs[open] summary::before{content:"▾ ";}
+details.zs .gloss{margin-top:6px}
+.dz .src{font-family:var(--sans);font-size:.74em;line-height:1.6;color:var(--muted);margin:8px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
+@media (max-width:560px){ .dz{padding:4px 14px 10px} .ju .bh{padding-left:9px} details.zs{padding-left:9px} }
+@media print{ details.zs .gloss{display:block} }
