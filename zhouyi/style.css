@@ -74,7 +74,9 @@ a.bigcard{display:block;text-decoration:none;color:var(--ink);background:var(--p
 a.bigcard:hover{background:var(--red-soft)}
 a.bigcard .k{font-size:.8em;color:var(--muted);letter-spacing:.2em}
 a.bigcard .h{font-family:var(--serif);font-size:1.5em;font-weight:700;color:var(--red);margin:6px 0 2px}
-a.bigcard .gua{font-size:3em;line-height:1.2;color:var(--ink)}
+a.bigcard .gua{line-height:1;margin:14px 0 6px}
+a.bigcard .gua svg{width:54px;height:auto}
+a.bigcard .gua svg .yang,a.bigcard .gua svg .yin{fill:var(--red)}
 a.bigcard .d{text-align:left;max-width:640px;margin:10px auto;font-size:.95em}
 a.bigcard .parts{font-size:.82em;color:var(--muted)}
 a.bigcard .go{display:inline-block;margin-top:14px;background:var(--red);color:var(--paper);border-radius:8px;padding:8px 22px;font-weight:700}
